@@ -7,38 +7,64 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
-    font-size: 50px;
+    color: #993cc8f3;
+    font-size: 60px;
 }
 
 #container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
 }
 
 table {
     border-collapse: collapse;
-    border: 4px solid rgb(1, 32, 1);
-    width: 60%;
+    width: 30%;
     height: 60%;
     table-layout: fixed;
-    background-color: white;
+    background-color: rgba(175, 162, 162, 0.097);
+}
+
+table td {
+    border: 2px solid rgb(2, 36, 2);
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+table tr:first-child td {
+    border-top: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
 }
 
 td {
-    border: 2px solid rgb(2, 36, 2);
     width: 33%;
     height: 33%;
     text-align: center;
     vertical-align: middle;
     font-size: 80px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
+
+
+td:hover {
+    background-color: #3d212132;
+}
+
+
 .cross {
-    color: rgb(212, 10, 219);
+    color: rgb(92, 2, 95);
 }
 
 .circle {
@@ -47,7 +73,8 @@ td {
 
 #message {
     text-align: center;
-    color: white;
+    color: #bf67ebab;
+    font-weight: bold;
     font-size: 30px;
     margin-top: 0;
 }
@@ -58,7 +85,7 @@ td {
     margin: 0 auto;
     margin-bottom: 20px;
     font-size: 30px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.053);
     color: black;
     border: 5px solid green;
     border-radius: 5px;
